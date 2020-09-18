@@ -5,3 +5,4 @@
 3. git add .
 4. git commit -m "actividad 1";
 5. git push
+6. luego click en pull request
