@@ -86,20 +86,29 @@ Invoca la función para validar su funcionalidad.
 
 */
 
-
+//constructor para crear objeto perro
 function Dog(nombre, color, raza) {
   this.nombre = nombre;
   this.color = color;
   this.raza = raza;
+  printInfo(nombre, color, raza);
 }
 
-var dog1 = new Dog("firulais", "cafe", "bulldog");
-var dog2 = new Dog("fido", "negro", "labrador");
-var dog3 = new Dog("paku", "blanco", "terrier");
+//challenge 3 con el bonus integrado
 function challenge3() {
+    var dog1 = new Dog("firulais", "cafe", "bulldog");
     console.log(dog1);
+    var dog2 = new Dog("fido", "negro", "labrador");
     console.log(dog2);
+    var dog3 = new Dog("paku", "blanco", "terrier");
     console.log(dog3);
+    
+}
+
+//bonus part function
+function printInfo(nombre, color, raza) {
+    console.log("Nombre: " + nombre + ", De Color: " + color + ", Raza: " + raza);
+    
 }
 </script>
 
@@ -110,6 +119,7 @@ function challenge3() {
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
     <button onclick="challenge3()">Challenge 2</button>
+    
 
   
 <div id = "dummy">

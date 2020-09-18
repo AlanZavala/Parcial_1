@@ -1,76 +1,93 @@
-header {
-
-
+* {
+  box-sizing: border-box;
 }
 
-
 h2 {
-
+  border: 1px solid black;
+  width: 33%;
+  float: left;
+  text-align: center;
+  margin-left: 1px;
 }
 
 .nav {
-
-
-  }
-
-  li {
-
-
-  }
-
-  .content{
-
+  clear:both;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-  .aside {
+li {
+  border: 1px solid black;
+  width: 19%;
+  text-align: center;
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
 
-  }
+.content {
+  clear:both;
+  overflow: auto;
+  border: 1px solid black;
+}
 
-  .slidebox{
+.aside {
+  border: 1px solid black;
+  width: 33.3%;
+  float: left;
+}
 
-   
-  }
+.slidebox {
+  border: 1px solid black;
+}
 
-  .article{
+.article {
+  margin-bottom: 5px;
+  width: 66%;
+  float: left;
+}
 
-  }
-
-
-.poem{
-
+.poem {
+  border: 1px solid black;
+  width: 50%;
+  float: left;
 }
 
 
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
-    .article {
+  
+  li {
+    width: 15%;
+  }
 
-  } 
-header{
+  .poem {
+    width: 100%;
+  }
 
-}
+  header{
+    display: none;
+  }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
-header,.content{
-
-}
-
-.nav {
-
-
+  header, .content{
+    display: none;
   }
 
+  .nav {
+    flex-direction: column;
+    align-content: center;
+  }
 
-.nav > li {
+  .nav > li {
+    width: 100%;
+    margin-bottom: 50px;
+    /justify-content: space-between;/
+  }
 
 }
-
-
-}
-
-
   
